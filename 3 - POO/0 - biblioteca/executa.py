@@ -1,4 +1,3 @@
-import streamlit as st
 from obras.entretenimento import LivEntretenimento
 from usuario.aluno import Aluno
 
@@ -24,4 +23,3 @@ livro1 = LivEntretenimento('Historia Sem fim',
 
 print(vars(livro1))
 
-st.write(vars(livro1))
