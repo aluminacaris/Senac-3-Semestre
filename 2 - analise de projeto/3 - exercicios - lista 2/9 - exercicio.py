@@ -1,1 +1,0 @@
-# acredito q seja possivel mas com muitas limitações
