@@ -1,7 +1,9 @@
 <?php
 include 'inc/header.inc.php';
-include 'classes/contatos.class.php';
-include 'classes/funcoes.class.php';
+include 'contatos.class.php';
+include 'funcoes.class.php';
+
+
 
 $contatos = new Contatos();
 $fn = new Funcoes();

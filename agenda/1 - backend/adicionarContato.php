@@ -1,6 +1,6 @@
 <?php
 
-require 'inc/header.inc.php';
+require 'inc/header.inc.php'
     ?>
 
     <h1>Adicionar Contato</h1>
@@ -11,7 +11,7 @@ require 'inc/header.inc.php';
         Endereço:<br>
         <input type="text" name="endereco"/><br><br>
         Email:<br>
-        <input type="email" name="email"/><br><br>
+        <input type="mail" name="email"/><br><br>
         Telefone:<br>
         <input type="text" name="telefone"/><br><br>
         Redes Sociais:<br>
