@@ -1,0 +1,827 @@
+/* Variáveis de cores lilás */
+:root {
+    --lilás-principal: #9370DB;
+    --lilás-escuro: #7B68EE;
+    --lilás-claro: #D8BFD8;
+    --lilás-suave: #E6E6FA;
+    --lilás-texto: #4B0082;
+    --cinza-claro: #f8f9fa;
+    --branco: #ffffff;
+}
+
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--lilás-suave);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--lilás-texto);
+}
+
+/* Header reduzido e estilizado */
+.site-header {
+    background: linear-gradient(135deg, var(--lilás-principal), var(--lilás-escuro));
+    color: var(--branco);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 15px 15px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Navegação Principal */
+.main-navigation {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--branco);
+    color: var(--lilás-principal);
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid var(--lilás-principal);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:hover {
+    background-color: var(--lilás-principal);
+    color: var(--branco);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+/* Remove sublinhado de todos os links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, var(--lilás-principal), var(--lilás-escuro));
+    color: var(--branco);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 15px 15px 0 0;
+}
+
+.footer h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer p {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    color: var(--lilás-claro);
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--branco);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Botões principais */
+.botaocontato,
+.botaousuario {
+    display: inline-block;
+    padding: 12px 24px;
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin: 8px 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botaocontato {
+    background: linear-gradient(135deg, var(--lilás-principal), var(--lilás-escuro));
+}
+
+.botaousuario {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.botaocontato:hover,
+.botaousuario:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: var(--branco);
+}
+
+/* Botão Voltar */
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--lilás-claro);
+    color: var(--lilás-texto);
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 15px 0;
+    border: 2px solid var(--lilás-principal);
+}
+
+.btn-voltar:hover {
+    background-color: var(--lilás-principal);
+    color: var(--branco);
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+/* Formulários */
+.formulario {
+    background-color: var(--branco);
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--lilás-claro);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--lilás-texto);
+    font-weight: 600;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--lilás-texto);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="date"],
+.formulario input[type="password"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid var(--lilás-claro);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-color: var(--lilás-principal);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(147, 112, 219, 0.1);
+}
+
+.botao {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--lilás-principal), var(--lilás-escuro));
+    color: var(--branco);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: var(--branco);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+th,
+td {
+    padding: 14px 16px;
+    border: 1px solid var(--lilás-claro);
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Cabeçalho da tabela */
+.header-row {
+    background: linear-gradient(135deg, var(--lilás-principal), var(--lilás-escuro));
+    color: var(--branco);
+}
+
+.header-row th {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Linhas alternadas */
+tr:not(.header-row):nth-child(even) {
+    background-color: var(--lilás-suave);
+}
+
+/* Botões de ação */
+.btn {
+    padding: 8px 14px;
+    margin-right: 6px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--branco);
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.editar {
+    background: linear-gradient(135deg, #48c774, #3ec46d);
+}
+
+.btn.editar:hover {
+    background: linear-gradient(135deg, #3ec46d, #34b15e);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn.excluir {
+    background: linear-gradient(135deg, #f14668, #e63950);
+}
+
+.btn.excluir:hover {
+    background: linear-gradient(135deg, #e63950, #d42c42);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mensagens */
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-weight: 500;
+    border: 2px solid transparent;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Títulos */
+h1 {
+    color: var(--lilás-texto);
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Action buttons container */
+.action-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--lilás-suave), var(--lilás-claro));
+    padding: 20px;
+}
+
+.login-form {
+    background: var(--branco);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form h1 {
+    margin-bottom: 30px;
+    color: var(--lilás-texto);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--lilás-texto);
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--lilás-claro);
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--lilás-principal);
+    outline: none;
+}
+
+.botao-login {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--lilás-principal), var(--lilás-escuro));
+    color: var(--branco);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.botao-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--lilás-suave);
+    border-radius: 10px;
+    border-left: 4px solid var(--lilás-principal);
+}
+
+.login-info p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: var(--lilás-texto);
+}
+
+/* Logout e info do usuário */
+.logout-btn {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: white !important;
+}
+
+.logout-btn:hover {
+    background-color: #c82333 !important;
+}
+
+.user-info {
+    color: var(--branco);
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.acesso-negado {
+    text-align: center;
+    padding: 50px;
+    background: var(--branco);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+.acesso-negado h1 {
+    color: #dc3545;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.acesso-negado p {
+    color: var(--lilás-texto);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Estilos para formulários de usuário */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+    transform: scale(1.2);
+}
+
+/* Mensagens de sucesso */
+.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid #c3e6cb;
+}
+
+/* Campos de formulário específicos */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: var(--lilás-texto);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--lilás-claro);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--lilás-principal);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(147, 112, 219, 0.1);
+}
+
+.info-usuario {
+    background-color: var(--lilás-claro);
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid var(--lilás-principal);
+    margin: 10px 0;
+}
+
+.info-admin {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #ffc107;
+    margin: 10px 0;
+    color: #856404;
+}
+
+.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid #c3e6cb;
+}
+
+.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid #f5c6cb;
+}
+
+.btn.desabilitado {
+    background-color: #6c757d !important;
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn.desabilitado:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Modal de Cadastro */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: var(--branco);
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.fechar:hover {
+    color: var(--lilás-texto);
+}
+
+/* Divisor entre login e cadastro */
+.divisor {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divisor span {
+    background-color: var(--branco);
+    padding: 0 15px;
+    color: var(--lilás-texto);
+    position: relative;
+    z-index: 1;
+}
+
+.divisor::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    height: 1px;
+    background-color: var(--lilás-claro);
+    z-index: 0;
+}
+
+/* Botão de cadastro */
+.botao-cadastro {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.botao-cadastro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.botao-cadastro-form {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.botao-cadastro-form:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animações para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: var(--branco);
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { 
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animações para mensagens */
+.alert-success {
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Melhorias visuais */
+.botao-cadastro-form:active {
+    transform: translateY(1px);
+}
+
+/* Estilo para mensagens de sucesso */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #c3e6cb;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.alert-success::before {
+    content: "✅ ";
+    font-weight: bold;
+}
+
+/* Responsividade para o modal */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 10% auto;
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .nav-btn {
+        width: 180px;
+        text-align: center;
+        margin: 4px 0;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 10px 12px;
+    }
+
+    .formulario {
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .botaocontato,
+    .botaousuario {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+        text-align: center;
+    }
+}
+
+/* Efeitos de hover suaves */
+button,
+.btn,
+.nav-btn,
+.botaocontato,
+.botaousuario {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Foco acessível */
+button:focus,
+.btn:focus,
+.nav-btn:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--lilás-principal);
+    outline-offset: 2px;
+}

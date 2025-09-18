@@ -1,8 +1,6 @@
-<?php
-include 'inc/header.inc.php';
-include 'classes/contatos.class.php';
+<?php include 'inc/header.inc.php'; ?>
+<?php include 'classes/contatos.class.php';
 include 'classes/funcoes.class.php';
-
 $contatos = new Contatos();
 $fn = new Funcoes();
 ?>
@@ -42,7 +40,7 @@ $fn = new Funcoes();
             <td>
                 <a href="editarContato.php?id=<?php echo $item['id']; ?>" class="btn editar">EDITAR</a>    
                 <a href="excluirContato.php?id=<?php echo $item['id']; ?>" class="btn excluir">EXCLUIR</a>    
-            </td>
+            <td>
      
         </tr>
 
