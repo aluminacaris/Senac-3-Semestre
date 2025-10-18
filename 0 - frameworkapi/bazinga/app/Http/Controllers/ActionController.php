@@ -21,7 +21,8 @@ class ActionController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Categories::all();
+        return view('action/actionCreate', compact('categories'));
     }
 
     /**
